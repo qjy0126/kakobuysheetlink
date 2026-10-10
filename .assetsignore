@@ -10,3 +10,5 @@ scripts
 *.pyc
 __pycache__
 README.md
+img/products
+img/products/**

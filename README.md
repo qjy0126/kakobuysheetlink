@@ -7,7 +7,7 @@
 ## 本地预览
 
 ```bash
-cd /Users/cusky/Desktop/kakobuy
+cd /Users/cusky/Desktop/kakobuy网站/kakobuysheetlink
 python3 -m http.server 5173
 ```
 
@@ -15,9 +15,12 @@ python3 -m http.server 5173
 
 ## 上线 kakobuysheetlink.com
 
-仓库已推到 [qjy0126/kakobuyqcsheets](https://github.com/qjy0126/kakobuyqcsheets)。在 GitHub 打开 **Settings → Pages**，Source 选 `main` / `/ (root)`。`CNAME` 已写成 `kakobuysheetlink.com`。
+仓库：[qjy0126/kakobuysheetlink](https://github.com/qjy0126/kakobuysheetlink)。
 
-域名 DNS：
+- GitHub Pages：Settings → Pages，Source 选 `main` / `/ (root)`。`CNAME` 已写成 `kakobuysheetlink.com`。
+- Cloudflare（Wrangler）：`.assetsignore` 已排除 `img/products`，部署时不会上传大批商品图。
+
+域名 DNS（GitHub Pages）：
 
 - 根域名 `kakobuysheetlink.com` 用 A 记录指向：
   - `185.199.108.153`
